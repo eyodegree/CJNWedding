@@ -65,26 +65,7 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">Story</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -102,7 +83,7 @@
 							<h1>Sarah &amp; Jeffrey</h1>
 							<h2>Our Safe Place</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><button  class="btn btn-default btn-sm">Save the date</button></p>
+							<p><button onclick="saveDdate()"  class="btn btn-default btn-sm">Save the date</button></p>
 						</div>
 					</div>
 				</div>
@@ -396,7 +377,18 @@
 										</figure>
 										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
 										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
+											<p>"The love which Onyi and Sarah share is such that everyone should seek to have. Thankfully, I was there when it all
+											started in 2018 at the Nigerian Law School Kano in Kano. The duo would follow each other like Siamese twins even to the
+											lecture hall. As guys are wont to do, we (Onyi’s friends) devised a name for Onyi - “Uhn Uhn” - the imitation of the
+											sound of an escort van. If you see Sarah in public, just look around, you’d be sure to see Onye. Hahaha…
+											
+											Their love has been nothing but genuine. I remember once when Sarah brought hot water in a flask for Onye on one of
+											those cold mornings in Kano. This left me convinced that this was pure love and nothing more - indeed the little things
+											matter. As a law student, Onye had nothing but Sarah stuck with him. 5 years down the line, we are celebrating what
+											seemingly started off as a “joke”. I will stop here for now, be sure to be at the wedding for more details of this young
+											and inspiring love story.
+											
+											See you at the wedding 🤗💙"</p>
 										</blockquote>
 									</div>
 								</div>
@@ -583,6 +575,14 @@
 			// Open the default email client
 			window.open(
 				`https://wa.me/2348140028558?text=I%20will%20be%20honored%20to%20grace%20your%20event%20with%20my%20presence.`,
+				"_blank"
+			);
+			// alert("Welcome")
+		}
+		function saveDdate() {
+			// Open the default email client
+			window.open(
+				`https://calendar.google.com/calendar/render?action=TEMPLATE&text=SAEFF23&details=Sarah Weds Jeff&dates=20231111T113000/20231111T180000&location=Umuahia`,
 				"_blank"
 			);
 			// alert("Welcome")

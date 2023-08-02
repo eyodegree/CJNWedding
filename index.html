@@ -498,7 +498,7 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
+					<!-- <form class="form-inline">
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Name</label>
@@ -512,9 +512,12 @@
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
+							<button type="button" onclick="sendEmail()" class="btn btn-default btn-block">I am Attending</button>
 						</div>
-					</form>
+					</form> -->
+					<div>
+						<button type="button" onclick="sendEmail()" class="btn btn-default btn-block">I am Attending</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -527,7 +530,7 @@
 				<div class="col-md-12 text-center">
 					<p>
 						<small class="block">&copy; 2023 Sarah & Jeffrey.</small> 
-						<small class="block">Designed by <a href="https://www.instagram.com/eyodegree" target="_blank">Ree Designs</a> </small>
+						<small class="block">Designed by <a href="https://www.instagram.com/eyodegree" target="_blank">Ree Designs</a> 08039613173 </small>
 					</p>
 					<p>
 						<!-- <ul class="fh5co-social-icons">
@@ -571,6 +574,20 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		function sendEmail() {
+			// Create the mailto URL
+			const mailtoUrl = `mailto:saeff.nwalima@gmail.com?subject=I%20will%20be%20Attending%20your%20Wedding&body=I%20will%20be%20honored%20to%20grace%20your%20event%20with%20my%20presence.`;
+
+			// Open the default email client
+			window.open(
+				`https://wa.me/2348140028558?text=I%20will%20be%20honored%20to%20grace%20your%20event%20with%20my%20presence.`,
+				"_blank"
+			);
+			// alert("Welcome")
+		}
+	</script>
 
 	<script>
     // var d = new Date(new Date().getTime() + 122 * 120 * 120 * 2000);
